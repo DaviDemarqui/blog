@@ -28,7 +28,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, className 
       prose-h3:mt-8 
       prose-h3:mb-3  
       prose-p:text-[#8f8f8f] 
-      prose-p:text-[1.2rem] 
+      prose-p:text-md 
       prose-a:underline 
       prose-a:transition 
       prose-a:duration-300 
