@@ -75,7 +75,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, className 
           justify-content: center;
           background-color: #18181b;
           border: 1px solid #27272a;
-          color: #52525b;
+          color: #8f8f8f;
           font-weight: bold;
           border-radius: 3px;
           font-size: 0.875rem;
