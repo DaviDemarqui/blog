@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { supabase } from "@/lib/supabase";
+import MarkdownRenderer from "@/components/MarkdownRenderer";
 
 export function formatDate(dateString: string): string {
   const date = new Date(dateString);
@@ -51,15 +52,15 @@ export default async function PostPage({
   }
 
   return (
-    <article className="prose prose-zinc dark:prose-invert max-w-none">
+    <article className="prose prose-zinc dark:prose-invert max-w-none py-5">
       <h1 className="text-2xl mb-0">{post.title}</h1>
-      <div className="grid grid-cols-2 w-full">
+      <div className="my-5 grid grid-cols-2 w-full">
         <span className="text-xs text-zinc-500">
           @DaviDemarqui | {formatDate(post.created_at)}
         </span>
         <span className="text-xs text-zinc-500 text-right">{post.views} views</span>
       </div>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+        <MarkdownRenderer content={post.content} />
     </article>
   );
 }
