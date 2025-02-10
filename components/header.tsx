@@ -10,14 +10,14 @@ export function Header() {
   return (
     <header className="flex items-center justify-between py-6">
       <Link href="/" className="text-2xl font-bold">
-        Davi Demarqui
+        David Demarqui
       </Link>
       <nav className="flex items-center gap-6">
         <Link href="/about" className="hover:text-gray-600 dark:hover:text-gray-300">
           About
         </Link>
         <a
-          href="https://x.com/DemarquiDavi"
+          href="https://x.com/DavidDemarqui"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-600 dark:hover:text-gray-300"
