@@ -1,5 +1,3 @@
-# Blog Documentation
-
 ## Overview
 This repository hosts a personal blog project built using modern web development technologies. The blog is designed to showcase personal content, articles, and portfolio items in an engaging and responsive format.
 
