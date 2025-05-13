@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} bg-white dark:bg-black text-black dark:text-white`}>
         <ThemeProvider>
-          <div className="max-w-4xl mx-auto px-4">
+          <div className="max-w-3xl mx-auto px-4">
             <Header />
             <main>{children}</main>
           </div>
